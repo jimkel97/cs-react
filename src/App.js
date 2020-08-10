@@ -1,23 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import Button from 'react-bootstrap/Button'
+// this just imports bootstrap button
+import { Button, Alert } from 'react-bootstrap'
+// this imports all of bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Menu from './Menu'
 
 function App() {
   return (
     <div className="App">
+      <Menu />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Alert variant="danger">This is a button</Alert>
+        <Button>Test Button</Button>
       </header>
     </div>
   );
