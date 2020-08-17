@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from "react-router-dom";
 import logo from "./logo.svg";
 
 import "./App.css";
@@ -14,44 +8,25 @@ import "./App.css";
 import { Button, Alert } from "react-bootstrap";
 // this imports all of bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Menu from "./Menu";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
+import Nav from "./Nav";
+import Home from "./Home";
+import Blog from "./Blog";
+import About from "./About";
 
 function App() {
   return (
-    <div className="App">
-      <Menu />
-      <header className="App-header">
-      <Alert variant="danger">This is a button</Alert>
-        <Button>Test Button</Button>
-      </header>
-      <Router>
-        <nav>
-          <ul>
-            <li>
-              <NavLink exact to="/" activeClassName="selected">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact" activeClassName="selected">
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
         <Switch>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/blog" component={Blog} />
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
