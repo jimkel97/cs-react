@@ -3,8 +3,7 @@ import React from "react";
 function Links(props) {
     return(
         <div>
-        <p><strong>{props.site}</strong></p>
-        <p>{props.url}</p>
+        <p><strong><a href={props.url} target="_blank">{props.site}</a></strong></p>
         </div>
     )
 }
