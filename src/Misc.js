@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-function Contact() {
+function Misc() {
   return (
     <div>
-      <h1>Contact Us</h1>
+      <h1>Miscellaneous Resources</h1>
     </div>
   );
 }
 
-export default Contact;
+export default Misc;

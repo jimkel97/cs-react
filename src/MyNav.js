@@ -8,14 +8,15 @@ function MyNav() {
   return (
     <div>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Master-Tech Services</Navbar.Brand>
+        <Navbar.Brand href="#home">Course Services Links</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About Us</Nav.Link>
-            <Nav.Link href="/contact">Contact Us</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <Nav.Link href="/webdev">WebDev</Nav.Link>
+            <Nav.Link href="/learning">Learning</Nav.Link>
+            <Nav.Link href="/misc">Misc</Nav.Link>
+          {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -25,12 +26,12 @@ function MyNav() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown>*/}
           </Nav>
-          <Form inline>
+          {/*<Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
             <Button variant="outline-success">Search</Button>
-          </Form>
+          </Form>*/}
         </Navbar.Collapse>
       </Navbar>
     </div>

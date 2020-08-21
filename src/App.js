@@ -12,8 +12,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import MyNav from "./MyNav";
 import Home from "./Home";
-import Contact from "./Contact";
-import About from "./About";
+import Learning from "./Learning";
+import WebDev from "./WebDev";
+import Misc from "./Misc";
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
         <MyNav />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/webdev" component={WebDev} />
+          <Route path="/learning" component={Learning} />
+          <Route path="/misc" component={Misc} />
         </Switch>
       </div>
     </BrowserRouter>
